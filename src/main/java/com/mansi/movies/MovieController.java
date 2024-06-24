@@ -17,10 +17,10 @@ public class MovieController {
     private MovieService movieService;
 
     @GetMapping
-    public ResponseEntity<List<Movie>> getAllMovies(){
+    public ResponseEntity<List<Movies>> getAllMovies(){
         System.out.println("hello");
-        System.out.println("hello");
-        List<Movie> movies = movieService.allMovies();
+        List<Movies> movies = movieService.allMovies();
+        System.out.println("movies");
         return new ResponseEntity<>(movies, HttpStatus.OK);
     }
 

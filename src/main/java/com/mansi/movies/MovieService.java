@@ -13,7 +13,7 @@ public class MovieService {
     private MovieRepository movieRepository;
 
 
-    public List<Movie> allMovies()
+    public List<Movies> allMovies()
     {
         return movieRepository.findAll();
     }
