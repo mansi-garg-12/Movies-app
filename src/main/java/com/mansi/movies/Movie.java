@@ -10,11 +10,11 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
-@Document(collection= "Movies")
+@Document(collection = "movies")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Movies {
+public class Movie {
     @Id
     private ObjectId id;
     private String imdbId;
